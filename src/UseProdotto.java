@@ -26,8 +26,8 @@ public class UseProdotto {
         Smartphone smartphone = new Smartphone("Smartphone", "Samsung A55", 480.00F, 22, 155);
         Cuffie cuffie = new Cuffie("cuffie", "Philips", 35.00F, 22, "nero", false);
         
-        System.out.println("Il primo prodotto è una TV "+televisore.nome+", la marca è "+televisore.marca+", il prezzo è €"+televisore.prezzo+", l'va da applicare è "+televisore.iva+", le dimensioni sono "+televisore.dimensioni+", smart "+televisore.smart+", codice prodotto: "+televisore.generateCod());
-        System.out.println("Il secondo prodotto è uno "+smartphone.nome+", la marca è "+smartphone.marca+", il prezzo è €"+smartphone.prezzo+", l'va da applicare è "+smartphone.iva+", la memoria è di "+smartphone.memoria+" GB, codice IMEI "+smartphone.generateImeiCod()+", codice prodotto: "+smartphone.generateCod());
-        System.out.println("Il terzo prodotto sono delle "+cuffie.nome+", la marca è "+cuffie.marca+", il prezzo è €"+cuffie.prezzo+", l'va da applicare è "+cuffie.iva+", il colore è "+cuffie.colore+", wireless "+cuffie.wireless+", codice prodotto: "+cuffie.generateCod());
+        System.out.println("Il primo prodotto è una TV "+televisore.getNome()+", la marca è "+televisore.getMarca()+", il prezzo è €"+televisore.getPrezzo()+", l'va da applicare è "+televisore.getIva()+", le dimensioni sono "+televisore.getDimensioni()+", smart "+televisore.isSmart()+", codice prodotto: "+televisore.generateCod());
+        System.out.println("Il secondo prodotto è uno "+smartphone.getNome()+", la marca è "+smartphone.getMarca()+", il prezzo è €"+smartphone.getPrezzo()+", l'va da applicare è "+smartphone.getIva()+", la memoria è di "+smartphone.getMemoria()+" GB, codice IMEI "+smartphone.generateImeiCod()+", codice prodotto: "+smartphone.generateCod());
+        System.out.println("Il terzo prodotto sono delle "+cuffie.getNome()+", la marca è "+cuffie.getMarca()+", il prezzo è €"+cuffie.getPrezzo()+", l'va da applicare è "+cuffie.getIva()+", il colore è "+cuffie.getColore()+", wireless "+cuffie.isWireless()+", codice prodotto: "+cuffie.generateCod());
     }
 }
