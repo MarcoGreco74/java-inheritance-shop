@@ -1,8 +1,7 @@
 public class Smartphone extends Prodotto {
+private long imeiCode;
 
-    public long imeiCode;
-
-    public int memoria;
+    private int memoria;
 
     public Smartphone(String nome, String marca, float prezzo, float iva, int memoria){
         super(nome, marca, prezzo, iva);
@@ -14,5 +13,23 @@ public class Smartphone extends Prodotto {
         String imei = "Imei-";
         String codiceImei = imei+codiceRandom;
         return codiceImei;
+    }
+
+    public long getImeiCode() {
+        return imeiCode;
+    }
+
+    public void setImeiCode(long imeiCode) {
+        this.imeiCode = imeiCode;
+    }
+
+    public int getMemoria() {
+        return memoria;
+    }
+
+    public void setMemoria(int memoria) {
+        this.memoria = memoria;
     } 
+
+    
 }

@@ -27,13 +27,13 @@ Al termine dell’inserimento stampate il carrello (fate l’override del metodo
 */
 public class Prodotto {
 
-    public String nome;
+    private String nome;
 
-    public String marca;
+    private String marca;
 
-    public float prezzo;
+    private float prezzo;
 
-    public float iva;
+    private float iva;
 
     public Prodotto(String nome, String marca, float prezzo, float iva){
         this.nome = nome;
@@ -46,6 +46,38 @@ public class Prodotto {
         int codiceRandom = (int)(Math.random()*1000);
         String codiceProdotto = codiceRandom+"_"+this.nome;
         return codiceProdotto;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public float getPrezzo() {
+        return prezzo;
+    }
+
+    public void setPrezzo(float prezzo) {
+        this.prezzo = prezzo;
+    }
+
+    public float getIva() {
+        return iva;
+    }
+
+    public void setIva(float iva) {
+        this.iva = iva;
     } 
     
 }
